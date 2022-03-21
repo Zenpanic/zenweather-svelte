@@ -4,7 +4,6 @@
 	let city = '';
 	let weather = {};
 	let forecast = {};
-	let errorMessage = '';
 
 	async function checkCity(cityName) {
 		if (!cityName) return;

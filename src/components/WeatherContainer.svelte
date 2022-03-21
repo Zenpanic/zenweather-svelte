@@ -16,7 +16,7 @@
 			time += 1;
 		} else if (direction === 'down' && time > 0) {
 			time -= 1;
-		}
+		};
 	};
 </script>
 
@@ -26,8 +26,8 @@
 	</div>
 	<WeatherData weather={forecastWeatherArray[time].weather[0]} main={forecastWeatherArray[time].main} forecastTime={forecastTime} wind={forecastWeatherArray[time].wind.speed} clouds={forecastWeatherArray[time].clouds.all} />
 	<nav class="navpage mt-2">
-		<button class="button is-primary is-light m-3" on:click={() => changeTime('down')}>Previous</button>
-  		<button class="button is-primary is-light m-3" on:click={() => changeTime('up')}>Next page</button>
+		<button class="button is-primary is-light m-3" on:click={() => changeTime('down')} disabled={time <= 0}>Previous</button>
+  		<button class="button is-primary is-light m-3" on:click={() => changeTime('up')} disabled={time < forecastWeatherArray.length - 1 }>Next page</button>
 	</nav>
 </section>
 
