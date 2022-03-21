@@ -1,1 +1,1 @@
-Built with Svelte Kit and Bulma, serverless hosting on Vercel.
+Built with Svelte Kit and Bulma, serverless hosting on Netlify.
