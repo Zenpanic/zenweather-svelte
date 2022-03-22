@@ -30,7 +30,7 @@
             <p>{roundToOne(main.feels_like)}°C</p>
             <p>{main.humidity}%</p>
             <p>{main.pressure}hPa</p>
-            <p>{clouds}</p>
+            <p>{clouds}%</p>
             <p>{wind}m/s</p>
         </div>
     </div>
